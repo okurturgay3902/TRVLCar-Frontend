@@ -1,7 +1,7 @@
 import React from 'react'
-import Foother from '../components/users/common/footer/foother';
-import MainNavbar from '../components/users/common/header/main-navbar';
-import TopBar from '../components/users/common/header/top-bar';
+import Footer from '../components/users/common/footer/footer'
+import MainNavbar from '../components/users/common/header/main-navbar'
+import TopBar from '../components/users/common/header/top-bar'
 
 const UserTemplate = ({children}) => {
   return (
@@ -9,11 +9,9 @@ const UserTemplate = ({children}) => {
         <TopBar/>
         <MainNavbar/>
         {children}
-        <Foother/>
+        <Footer/>
     </>
-
-
   )
 }
-
-export default UserTemplate;
+/*  */
+export default UserTemplate

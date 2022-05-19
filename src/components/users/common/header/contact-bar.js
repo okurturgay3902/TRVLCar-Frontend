@@ -1,16 +1,17 @@
 import React from "react";
 import { RiHeadphoneLine, RiMailOpenLine, RiMapPinLine } from "react-icons/ri";
+
 const ContactBar = () => {
   return (
     <ul className="contact-bar">
       <li>
         <RiHeadphoneLine />
         <div>
-          <a href="tel:905555555555">(555)-555-5555</a>
-          <br /><a href="tel:905555555555">(555)-555-5555</a>
+          <a href="tel:19046516572">(904)-369-8938</a>
+          <br /><a href="tel:19046516572">(904)-651-6572</a>
         </div>
       </li>
-      <li>
+      <li className="d-none d-lg-flex">
         <RiMailOpenLine />
         <div>
           <a href="mailto:info@trvlcar.com">info@trvlcar.com</a>
@@ -20,7 +21,7 @@ const ContactBar = () => {
       <li>
         <RiMapPinLine />
         <div>
-          sjkhsdjfhsjkdfhksdf
+          Cherry Tree Ct, Jacksonville, 32216
           <br />
           Florida USA
         </div>
@@ -28,4 +29,5 @@ const ContactBar = () => {
     </ul>
   );
 };
+
 export default ContactBar;

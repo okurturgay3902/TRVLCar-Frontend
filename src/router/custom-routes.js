@@ -11,19 +11,20 @@ import UserTemplate from "../templates/user-template";
 const CustomRoutes = () => {
   return (
     <BrowserRouter>
+       
       <Routes>
         <Route path="/">
           {/* ADMIN ROUTES */}
 
           {/* USER ROUTES */}
-          <Route index element={<UserTemplate><HomePage /></UserTemplate> } />
+          <Route index element={<UserTemplate><HomePage /></UserTemplate>} />
           <Route path="about" element={<UserTemplate><AboutPage /></UserTemplate>} />
           <Route path="contact" element={<UserTemplate><ContactPage /></UserTemplate>} />
           <Route path="auth" element={<AuthPage />} />
 
           <Route path="vehicles">
-            <Route index element={<VehiclesPage />} />
-            <Route path=":vehicleId" element={<VehicleDetailsPage />} />
+            <Route index element={<UserTemplate><VehiclesPage /></UserTemplate>} />
+            <Route path=":vehicleId" element={<UserTemplate><VehicleDetailsPage /></UserTemplate>} />
           </Route>
         </Route>
       </Routes>
@@ -32,4 +33,3 @@ const CustomRoutes = () => {
 };
 
 export default CustomRoutes;
-
